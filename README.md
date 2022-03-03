@@ -23,18 +23,18 @@
 ## How to Use
 
 - Search for SQL Shell (psql) and create tasks db</li>
-	```
-		postgres=#CREATE DATABASE tasks;
-	```
+```
+postgres=#CREATE DATABASE tasks;
+```
 - Enter on project folder and run migrations</li>
-	```
-		~/dev$ cd tasks-api
-		~/dev/tasks-api$ knex migrate:latest
-	```
+```
+~/dev$ cd tasks-api
+~/dev/tasks-api$ knex migrate:latest
+```
 - Start server</li>
-	```
-		~/dev/tasks-api$ yarn start
-	```
+```
+~/dev/tasks-api$ yarn start
+```
 - Using application of your preference, send requests to localhost:3000</li>
 
 
