@@ -22,20 +22,22 @@
 
 ## How to Use
 
-- Search for SQL Shell (psql) and create tasks db</li>
-```
+- Search for SQL Shell (psql) and create tasks db
+```sh
 postgres=#CREATE DATABASE tasks;
 ```
-- Enter on project folder and run migrations</li>
-```
+- In <a href="knexfile.js">knex file</a> change your credentials or your password only
+- In <a href=".env.example">.env.example</a> remove .example extension and generate a authsecret, recommended with sha256 algorithm
+- Enter on project folder and run migrations
+```sh
 ~/dev$ cd tasks-api
 ~/dev/tasks-api$ knex migrate:latest
 ```
-- Start server</li>
-```
+- Start server
+```sh
 ~/dev/tasks-api$ yarn start
 ```
-- Using application of your preference, send requests to localhost:3000</li>
+- Using application of your preference, send requests to localhost:3000
 
 
 ### Examples with curl
