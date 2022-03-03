@@ -21,22 +21,22 @@
 </ul>
 
 ## How to Use
-<ul>
-	<li>Search for SQL Shell (psql) and create tasks db</li>
-		```
+
+- Search for SQL Shell (psql) and create tasks db</li>
+	```
 		postgres=#CREATE DATABASE tasks;
-		```
-	<li>Enter on project folder and run migrations</li>
-		```
+	```
+- Enter on project folder and run migrations</li>
+	```
 		~/dev$ cd tasks-api
 		~/dev/tasks-api$ knex migrate:latest
-		```
-	<li>Start server</li>
-		```
+	```
+- Start server</li>
+	```
 		~/dev/tasks-api$ yarn start
-		```
-	<li>Using application of your preference, send requests to localhost:3000</li>
-</ul>
+	```
+- Using application of your preference, send requests to localhost:3000</li>
+
 
 ### Examples with curl
 
