@@ -41,7 +41,40 @@ postgres=#CREATE DATABASE tasks;
 
 
 ### Examples with curl
-
+- Create user
+```sh
+curl -X POST http://localhost:3000/signup
+	-H "Content-Type: application/json"
+	-d '{"name": "user_name", "email": "user_email", "password": "user_password"}'
+```
+- Authenticate user
+```sh
+curl -X POST http://localhost:3000/signin
+	-H "Content-Type: application/json"
+	-d '{"email": "user_email", "password": "user_password"}'
+```
+You will get a jwt token to put in header in next requests
+- Get open tasks
+```sh
+curl http://localhost:3000/signup -H "Authorization: Bearer your_jwt_token"
+```
+- Create task
+```sh
+curl -X POST http://localhost:3000/tasks
+	-H "Authorization: Bearer your_jwt_token"
+	-H "Content-Type: application/json"
+	-d '{"desc": "make examples on readme","estimatedAt": "2022-02-03"}'
+```
+- Delete task
+```sh
+curl -X POST http://localhost:3000/tasks/task_id
+	-H "Authorization: Bearer your_jwt_token"
+```
+- Mark task as Done
+```sh
+curl -X PUT http://localhost:3000/tasks/task_id/toggle
+	-H "Authorization: Bearer your_jwt_token"
+```
 
 
 ## Technologies
