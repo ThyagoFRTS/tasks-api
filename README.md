@@ -12,6 +12,13 @@
 - Create, Delete and Update doneAt attribute on task
 - Get list of tasks
 
+## Technologies
+
+- Node
+- Passport
+- Express
+- Postrgres
+
 ## How to Install
 <ul>
 	<li>Install Node</li>
@@ -76,13 +83,6 @@ curl -X PUT http://localhost:3000/tasks/task_id/toggle
 	-H "Authorization: Bearer your_jwt_token"
 ```
 
-
-## Technologies
-
-- Node
-- Passport
-- Express
-- Postrgres
 
 ## Author
 
