@@ -1,5 +1,5 @@
-# Power Eletric
-<p align='center' >A simple api to manage task lists</p>
+# Tasks Api
+<p>A simple api to manage task lists</p>
 
 ## Project Status
 
