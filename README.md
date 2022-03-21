@@ -1,10 +1,6 @@
 # Tasks Api
 <p>A simple api to manage task lists</p>
 
-## Project Status
-
-<p>In development</p>
-
 ## Features
 
 - Create a user
